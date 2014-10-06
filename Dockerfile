@@ -15,3 +15,5 @@ RUN yes | google-cloud-sdk/bin/gcloud components update pkg-go pkg-python pkg-ja
 ENV PATH /google-cloud-sdk/bin:$PATH
 
 VOLUME ["/root/.config"]
+
+ENTRYPOINT ["/google-cloud-sdk/bin/gcloud"]
