@@ -1,5 +1,5 @@
 # Build:
-#   docker build -t dgageot/gloud .
+#   docker build -t dgageot/gcloud .
 #
 # Run:
 #   docker run -ti --name gcloud-config dgageot/gcloud auth login
