@@ -3,7 +3,7 @@
   "kind": "ReplicationController",
   "apiVersion": "v1beta1",
   "desiredState": {
-    "replicas": 4,
+    "replicas": 1,
     "replicaSelector": {"name": "web"},
     "podTemplate": {
       "desiredState": {

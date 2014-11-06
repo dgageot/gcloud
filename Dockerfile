@@ -5,7 +5,6 @@
 #   docker run -ti --name gcloud-config dgageot/gcloud auth login
 #
 #		alias gcloud='docker run --rm -ti --volumes-from gcloud-config -v `pwd`:/files dgageot/gcloud'
-#   gcloud set project code-story-blog
 #   gcloud config set project code-story-blog
 #   gcloud compute instances list
 #
@@ -18,10 +17,6 @@
 #
 # Container Engine (Expose to the world):
 #   gcloud preview container services --cluster-name jug create --config-file=/files/web-service.json --zone europe-west1-c
-#
-# Container Engine (Resize):
-#   gcloud preview container replicationcontrollers --cluster-name jug delete web --zone europe-west1-c
-#   gcloud preview container replicationcontrollers --cluster-name jug create --config-file=/files/web-controller.json --zone europe-west1-c
 #
 # Container Engine (Delete):
 #   gcloud preview container services --cluster-name jug delete web --zone europe-west1-c
