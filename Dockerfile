@@ -2,9 +2,9 @@
 #   docker build -t dgageot/gloud .
 #
 # Run:
-#   docker run -ti --name gcloud-config dgageot/gcloud auth login
+#   docker run -ti --name gcloud-config -v `pwd`:/files dgageot/gcloud auth login
 #
-#		alias gcloud='docker run --rm -ti --volumes-from gcloud-config -v `pwd`:/files dgageot/gcloud'
+#   alias gcloud='docker run --rm -ti --volumes-from gcloud-config dgageot/gcloud'
 #   gcloud config set project code-story-blog
 #   gcloud compute instances list
 #
